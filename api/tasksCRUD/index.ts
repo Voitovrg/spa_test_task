@@ -1,4 +1,4 @@
-import { handleOptions, readJsonBody, sendMethodNotAllowed, store } from "../_lib/store";
+import { handleOptions, readJsonBody, sendMethodNotAllowed, store } from "../_lib/store.js";
 
 export const config = {
   runtime: "nodejs",
