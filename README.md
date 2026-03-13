@@ -1,5 +1,37 @@
-# Vue 3 + TypeScript + Vite
+# SPA Test Task (Vue 3 + Vite + TypeScript)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Розгорнута версія
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+- **Демо (Vercel)**: `https://spa-test-task-eight.vercel.app/`
+
+## Короткий опис процесу розгортання
+
+- Проєкт деплоїться на **Vercel** як статичний фронтенд (Vite build → `dist`).
+- Для роботи **без локального бекенду** використовується мок-API на **Vercel Serverless Functions**:
+  - `/api/projects`
+  - `/api/tasksCRUD`
+- У продакшені фронтенд за замовчуванням звертається до API за шляхом **`/api`** (тобто запити йдуть на той самий домен).
+
+## Локальний запуск
+
+### Варіант 1: тільки фронтенд (API на Vercel)
+
+```bash
+npm i
+npm run dev
+```
+
+### Варіант 2: фронтенд + локальний json-server
+
+1) Запустити мок-базу:
+
+```bash
+npm i
+npm run server
+```
+
+2) Запустити фронтенд, вказавши base URL API:
+
+```bash
+VITE_API_BASE_URL=http://localhost:3000 npm run dev
+```
