@@ -1,5 +1,9 @@
 import { handleOptions, readJsonBody, sendMethodNotAllowed, store } from "../_lib/store";
 
+export const config = {
+  runtime: "nodejs",
+};
+
 export default async function handler(req: any, res: any) {
   if (req.method === "OPTIONS") return handleOptions(res);
 

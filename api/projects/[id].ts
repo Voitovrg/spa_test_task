@@ -1,5 +1,9 @@
 import { handleOptions, readJsonBody, sendMethodNotAllowed, sendNotFound, store } from "../_lib/store";
 
+export const config = {
+  runtime: "nodejs",
+};
+
 function parseId(raw: unknown): number | undefined {
   const n = typeof raw === "string" ? Number(raw) : typeof raw === "number" ? raw : NaN;
   return Number.isFinite(n) ? n : undefined;
