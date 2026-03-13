@@ -1,0 +1,852 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Internal SPA test task",
+      "description": "Main project for managing tasks and projects in this demo.",
+      "members": [
+        "Alice",
+        "Bob",
+        "Charlie",
+        "Dana",
+        "Eve"
+      ],
+      "status": "active",
+      "createdAt": "2026-03-01"
+    },
+    {
+      "id": "2",
+      "name": "Marketing website refresh",
+      "description": "Redesign public marketing site with new branding.",
+      "members": [
+        "Bob",
+        "Charlie"
+      ],
+      "status": "active",
+      "createdAt": "2026-02-20"
+    },
+    {
+      "id": "3",
+      "name": "Mobile app prototype",
+      "description": "Prototype core flows for the mobile experience.",
+      "members": [
+        "Dana"
+      ],
+      "status": "archived",
+      "createdAt": "2026-01-15"
+    }
+  ],
+  "tasksCRUD": [
+    {
+      "id": "1",
+      "projectId": 1,
+      "title": "Design main dashboard",
+      "assignee": "Alice",
+      "status": "done",
+      "dueDate": "2026-03-05",
+      "order": 0,
+      "priority": 1
+    },
+    {
+      "id": "2",
+      "projectId": 1,
+      "title": "Implement auth flow",
+      "assignee": "Bob",
+      "status": "done",
+      "dueDate": "2026-03-06",
+      "order": 1,
+      "priority": 2
+    },
+    {
+      "id": "3",
+      "projectId": 1,
+      "title": "Create API contracts",
+      "assignee": "Charlie",
+      "status": "done",
+      "dueDate": "2026-03-07",
+      "order": 2,
+      "priority": 3
+    },
+    {
+      "id": "4",
+      "projectId": 1,
+      "title": "Implement projects table",
+      "assignee": "Alice",
+      "status": "done",
+      "dueDate": "2026-03-08",
+      "order": 3,
+      "priority": 4
+    },
+    {
+      "id": "5",
+      "projectId": 1,
+      "title": "Add filtering to tasks",
+      "assignee": "Bob",
+      "status": "done",
+      "dueDate": "2026-03-09",
+      "order": 4,
+      "priority": 5
+    },
+    {
+      "id": "6",
+      "projectId": 1,
+      "title": "Create Kanban view",
+      "assignee": null,
+      "status": "in_progress",
+      "dueDate": "2026-03-15",
+      "order": 5,
+      "priority": 4
+    },
+    {
+      "id": "7",
+      "projectId": 1,
+      "title": "Set up drag and drop",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-16",
+      "order": 6,
+      "priority": 2
+    },
+    {
+      "id": "8",
+      "projectId": 1,
+      "title": "Fix layout bugs",
+      "assignee": "Eve",
+      "status": "in_progress",
+      "dueDate": "2026-03-17",
+      "order": 7,
+      "priority": 3
+    },
+    {
+      "id": "9",
+      "projectId": 1,
+      "title": "Refactor API layer",
+      "assignee": "Alice",
+      "status": "in_progress",
+      "dueDate": "2026-03-18",
+      "order": 8,
+      "priority": 4
+    },
+    {
+      "id": "10",
+      "projectId": 1,
+      "title": "Write unit tests for tasks module",
+      "assignee": "Bob",
+      "status": "in_progress",
+      "dueDate": "2026-03-19",
+      "order": 9,
+      "priority": 5
+    },
+    {
+      "id": "11",
+      "projectId": 1,
+      "title": "User profile page",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-22",
+      "order": 10,
+      "priority": 1
+    },
+    {
+      "id": "12",
+      "projectId": 1,
+      "title": "Settings panel",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-23",
+      "order": 11,
+      "priority": 2
+    },
+    {
+      "id": "13",
+      "projectId": 1,
+      "title": "Notifications center",
+      "assignee": "Eve",
+      "status": "todo",
+      "dueDate": "2026-03-24",
+      "order": 12,
+      "priority": 3
+    },
+    {
+      "id": "14",
+      "projectId": 1,
+      "title": "Global search",
+      "assignee": "Alice",
+      "status": "todo",
+      "dueDate": "2026-03-25",
+      "order": 13,
+      "priority": 4
+    },
+    {
+      "id": "15",
+      "projectId": 1,
+      "title": "Export data to CSV",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-03-26",
+      "order": 14,
+      "priority": 5
+    },
+    {
+      "id": "16",
+      "projectId": 1,
+      "title": "Accessibility audit",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-27",
+      "order": 15,
+      "priority": 1
+    },
+    {
+      "id": "17",
+      "projectId": 1,
+      "title": "Dark mode support",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-28",
+      "order": 16,
+      "priority": 2
+    },
+    {
+      "id": "18",
+      "projectId": 1,
+      "title": "Responsive layout fixes",
+      "assignee": "Eve",
+      "status": "todo",
+      "dueDate": "2026-03-29",
+      "order": 17,
+      "priority": 3
+    },
+    {
+      "id": "19",
+      "projectId": 1,
+      "title": "Error boundaries",
+      "assignee": "Alice",
+      "status": "todo",
+      "dueDate": "2026-03-30",
+      "order": 18,
+      "priority": 4
+    },
+    {
+      "id": "20",
+      "projectId": 1,
+      "title": "Loading states and skeletons",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-04-01",
+      "order": 19,
+      "priority": 5
+    },
+    {
+      "id": "21",
+      "projectId": 1,
+      "title": "Analytics dashboard",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-04-02",
+      "order": 20,
+      "priority": 1
+    },
+    {
+      "id": "22",
+      "projectId": 1,
+      "title": "Audit log view",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-03",
+      "order": 21,
+      "priority": 2
+    },
+    {
+      "id": "23",
+      "projectId": 1,
+      "title": "Permissions and roles",
+      "assignee": "Eve",
+      "status": "todo",
+      "dueDate": "2026-04-04",
+      "order": 22,
+      "priority": 3
+    },
+    {
+      "id": "24",
+      "projectId": 1,
+      "title": "Onboarding flow",
+      "assignee": "Alice, Bob",
+      "status": "todo",
+      "dueDate": "2026-04-05",
+      "order": 23,
+      "priority": 4
+    },
+    {
+      "id": "25",
+      "projectId": 1,
+      "title": "Help center integration",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-04-06",
+      "order": 24,
+      "priority": 5
+    },
+    {
+      "id": "26",
+      "projectId": 1,
+      "title": "Performance optimization",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-04-08",
+      "order": 25,
+      "priority": 1
+    },
+    {
+      "id": "27",
+      "projectId": 2,
+      "title": "Homepage redesign",
+      "assignee": "Bob",
+      "status": "done",
+      "dueDate": "2026-03-01",
+      "order": 26,
+      "priority": 2
+    },
+    {
+      "id": "28",
+      "projectId": 2,
+      "title": "New branding assets",
+      "assignee": "Charlie",
+      "status": "done",
+      "dueDate": "2026-03-02",
+      "order": 27,
+      "priority": 3
+    },
+    {
+      "id": "29",
+      "projectId": 2,
+      "title": "Copy refresh",
+      "assignee": "Bob",
+      "status": "done",
+      "dueDate": "2026-03-03",
+      "order": 28,
+      "priority": 4
+    },
+    {
+      "id": "30",
+      "projectId": 2,
+      "title": "SEO meta tags",
+      "assignee": "Charlie",
+      "status": "in_progress",
+      "dueDate": "2026-03-10",
+      "order": 29,
+      "priority": 5
+    },
+    {
+      "id": "31",
+      "projectId": 2,
+      "title": "Contact form",
+      "assignee": "Bob",
+      "status": "in_progress",
+      "dueDate": "2026-03-11",
+      "order": 30,
+      "priority": 1
+    },
+    {
+      "id": "32",
+      "projectId": 2,
+      "title": "Blog layout",
+      "assignee": "Charlie",
+      "status": "in_progress",
+      "dueDate": "2026-03-12",
+      "order": 31,
+      "priority": 2
+    },
+    {
+      "id": "33",
+      "projectId": 2,
+      "title": "Case studies page",
+      "assignee": "Bob",
+      "status": "in_progress",
+      "dueDate": "2026-03-13",
+      "order": 32,
+      "priority": 3
+    },
+    {
+      "id": "34",
+      "projectId": 2,
+      "title": "Testimonials section",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-20",
+      "order": 33,
+      "priority": 4
+    },
+    {
+      "id": "35",
+      "projectId": 2,
+      "title": "Pricing page",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-03-21",
+      "order": 34,
+      "priority": 5
+    },
+    {
+      "id": "36",
+      "projectId": 2,
+      "title": "FAQ section",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-22",
+      "order": 35,
+      "priority": 1
+    },
+    {
+      "id": "37",
+      "projectId": 2,
+      "title": "Newsletter signup",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-03-23",
+      "order": 36,
+      "priority": 2
+    },
+    {
+      "id": "38",
+      "projectId": 2,
+      "title": "Social links integration",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-24",
+      "order": 37,
+      "priority": 3
+    },
+    {
+      "id": "39",
+      "projectId": 2,
+      "title": "Analytics setup",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-03-25",
+      "order": 38,
+      "priority": 4
+    },
+    {
+      "id": "40",
+      "projectId": 2,
+      "title": "A/B test framework",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-26",
+      "order": 39,
+      "priority": 5
+    },
+    {
+      "id": "41",
+      "projectId": 2,
+      "title": "Landing page templates",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-03-27",
+      "order": 40,
+      "priority": 1
+    },
+    {
+      "id": "42",
+      "projectId": 2,
+      "title": "Video hero component",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-28",
+      "order": 41,
+      "priority": 2
+    },
+    {
+      "id": "43",
+      "projectId": 2,
+      "title": "Team page",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-03-29",
+      "order": 42,
+      "priority": 3
+    },
+    {
+      "id": "44",
+      "projectId": 2,
+      "title": "Careers page",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-03-30",
+      "order": 43,
+      "priority": 4
+    },
+    {
+      "id": "45",
+      "projectId": 2,
+      "title": "Press kit",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-04-01",
+      "order": 44,
+      "priority": 5
+    },
+    {
+      "id": "46",
+      "projectId": 2,
+      "title": "Legal pages",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-04-02",
+      "order": 45,
+      "priority": 1
+    },
+    {
+      "id": "47",
+      "projectId": 2,
+      "title": "Custom 404 page",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-04-03",
+      "order": 46,
+      "priority": 2
+    },
+    {
+      "id": "48",
+      "projectId": 2,
+      "title": "Sitemap generation",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-04-04",
+      "order": 47,
+      "priority": 3
+    },
+    {
+      "id": "49",
+      "projectId": 2,
+      "title": "Performance audit",
+      "assignee": "Bob, Charlie",
+      "status": "todo",
+      "dueDate": "2026-04-05",
+      "order": 48,
+      "priority": 4
+    },
+    {
+      "id": "50",
+      "projectId": 2,
+      "title": "Image optimization",
+      "assignee": "Charlie",
+      "status": "todo",
+      "dueDate": "2026-04-06",
+      "order": 49,
+      "priority": 5
+    },
+    {
+      "id": "51",
+      "projectId": 2,
+      "title": "CTA buttons redesign",
+      "assignee": "Bob",
+      "status": "todo",
+      "dueDate": "2026-04-08",
+      "order": 50,
+      "priority": 1
+    },
+    {
+      "id": "52",
+      "projectId": 2,
+      "title": "Navigation menu",
+      "assignee": "Charlie",
+      "status": "in_progress",
+      "dueDate": "2026-04-09",
+      "order": 51,
+      "priority": 2
+    },
+    {
+      "id": "53",
+      "projectId": 3,
+      "title": "App shell and navigation",
+      "assignee": "Dana",
+      "status": "done",
+      "dueDate": "2026-02-01",
+      "order": 52,
+      "priority": 3
+    },
+    {
+      "id": "54",
+      "projectId": 3,
+      "title": "Login screen",
+      "assignee": "Dana",
+      "status": "done",
+      "dueDate": "2026-02-05",
+      "order": 53,
+      "priority": 4
+    },
+    {
+      "id": "55",
+      "projectId": 3,
+      "title": "Sign up flow",
+      "assignee": "Dana",
+      "status": "done",
+      "dueDate": "2026-02-10",
+      "order": 54,
+      "priority": 5
+    },
+    {
+      "id": "56",
+      "projectId": 3,
+      "title": "Home screen",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-15",
+      "order": 55,
+      "priority": 1
+    },
+    {
+      "id": "57",
+      "projectId": 3,
+      "title": "Profile screen",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-16",
+      "order": 56,
+      "priority": 2
+    },
+    {
+      "id": "58",
+      "projectId": 3,
+      "title": "Settings screen",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-17",
+      "order": 57,
+      "priority": 3
+    },
+    {
+      "id": "59",
+      "projectId": 3,
+      "title": "Push notifications",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-18",
+      "order": 58,
+      "priority": 4
+    },
+    {
+      "id": "60",
+      "projectId": 3,
+      "title": "Offline support",
+      "assignee": "Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-19",
+      "order": 59,
+      "priority": 5
+    },
+    {
+      "id": "61",
+      "projectId": 3,
+      "title": "Sync logic",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-25",
+      "order": 60,
+      "priority": 1
+    },
+    {
+      "id": "62",
+      "projectId": 3,
+      "title": "Camera integration",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-26",
+      "order": 61,
+      "priority": 2
+    },
+    {
+      "id": "63",
+      "projectId": 3,
+      "title": "Photo upload",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-27",
+      "order": 62,
+      "priority": 3
+    },
+    {
+      "id": "64",
+      "projectId": 3,
+      "title": "Maps view",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-28",
+      "order": 63,
+      "priority": 4
+    },
+    {
+      "id": "65",
+      "projectId": 3,
+      "title": "List view",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-29",
+      "order": 64,
+      "priority": 5
+    },
+    {
+      "id": "66",
+      "projectId": 3,
+      "title": "Detail screens",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-03-30",
+      "order": 65,
+      "priority": 1
+    },
+    {
+      "id": "67",
+      "projectId": 3,
+      "title": "Search and filters",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-01",
+      "order": 66,
+      "priority": 2
+    },
+    {
+      "id": "68",
+      "projectId": 3,
+      "title": "Favorites",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-02",
+      "order": 67,
+      "priority": 3
+    },
+    {
+      "id": "69",
+      "projectId": 3,
+      "title": "Share flow",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-03",
+      "order": 68,
+      "priority": 4
+    },
+    {
+      "id": "70",
+      "projectId": 3,
+      "title": "In-app messaging",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-04",
+      "order": 69,
+      "priority": 5
+    },
+    {
+      "id": "71",
+      "projectId": 3,
+      "title": "Payment flow",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-05",
+      "order": 70,
+      "priority": 1
+    },
+    {
+      "id": "72",
+      "projectId": 3,
+      "title": "Onboarding screens",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-06",
+      "order": 71,
+      "priority": 2
+    },
+    {
+      "id": "73",
+      "projectId": 3,
+      "title": "Splash screen",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-08",
+      "order": 72,
+      "priority": 3
+    },
+    {
+      "id": "74",
+      "projectId": 3,
+      "title": "Deep linking",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-09",
+      "order": 73,
+      "priority": 4
+    },
+    {
+      "id": "75",
+      "projectId": 3,
+      "title": "Biometric auth",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-10",
+      "order": 74,
+      "priority": 5
+    },
+    {
+      "id": "76",
+      "projectId": 3,
+      "title": "Dark theme",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-12",
+      "order": 75,
+      "priority": 1
+    },
+    {
+      "id": "77",
+      "projectId": 3,
+      "title": "Localization",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-13",
+      "order": 76,
+      "priority": 2
+    },
+    {
+      "id": "78",
+      "projectId": 3,
+      "title": "Performance tuning",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-15",
+      "order": 77,
+      "priority": 3
+    },
+    {
+      "id": "79",
+      "projectId": 3,
+      "title": "Beta release prep",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-16",
+      "order": 78,
+      "priority": 4
+    },
+    {
+      "id": "80",
+      "projectId": 3,
+      "title": "App store listing",
+      "assignee": "Dana",
+      "status": "todo",
+      "dueDate": "2026-04-18",
+      "order": 79,
+      "priority": 5
+    },
+    {
+      "id": "e46a",
+      "title": "Завешить проект",
+      "assignee": "Charlie, Eve, Alice, Bob, Dana",
+      "status": "in_progress",
+      "dueDate": "2026-03-08",
+      "projectId": "2",
+      "order": 80,
+      "priority": 1
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
